@@ -1,0 +1,114 @@
+// RFS import
+@import "../../node_modules/rfs/stylus.styl";
+
+// Fonts
+@font-face
+   font-family Gilroy
+   src url(/fonts/Gilroy-Bold.otf)
+   font-weight Bold
+   
+@font-face
+   font-family Gilroy
+   src url(/fonts/Gilroy-Light.otf)
+   font-weight Normal
+
+@font-face
+   font-family Nunito
+   src url(/fonts/Nunito-Bold.ttf)
+   font-weight Bold
+  
+@font-face
+   font-family Nunito
+   src url(/fonts/Nunito-Regular.ttf)
+   font-weight Normal
+  
+// Colour palette
+orange = #E8824F
+apricot = #F2A870
+marshmallow = #FAF5E4
+cyan = #3BB0BA
+cyanTransparent = rgba(59, 176, 186, 0.7)
+
+body
+	margin 0
+	padding 0
+	
+.widthRestriction
+	width 90%
+	display block
+	margin 0 auto
+	
+// Topnav bar
+.emptyNav
+	width 100%
+	height 20px
+	position absolute
+	background-color orange
+nav 
+	width 100%
+	margin 0
+	padding 0
+	clear both
+	text-align right
+	position absolute
+	background-color apricot
+	top 20px
+
+.logo
+	rfs(2rem)
+	font-family Gilroy
+	float left
+	display block
+	margin-left 0px
+	margin-right 20px
+	color marshmallow
+
+.topnavLinksContainer
+	overflow auto
+	white-space nowrap
+
+.topnavLink
+	rfs(1.1rem)
+	font-family Nunito
+	display inline-block
+	margin-left 10px
+	padding-bottom 10px
+	transition 0.2s
+	
+// .topnavLink:hover
+
+.registerButton
+	font-family Nunito
+	background-color #00ff00
+	border none
+	rfs(1.1rem)
+	border-radius 20px
+	padding 7px 15px 7px 15px
+
+// Banner section
+.bannerSection
+	height 100%
+	background url('/images/secretariat.jpg')
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-position 50% 50%
+	background-size: cover
+
+.bannerContent 
+	padding-top 200px
+	color #ffffff
+	text-align center
+	font-family Gilroy
+
+mark 
+	background-color cyanTransparent
+	color marshmallow
+	
+h1
+	rfs(3rem)
+
+h2
+	rfs(2rem)
+
+h3 
+	rfs(1.5rem)
