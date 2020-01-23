@@ -1,5 +1,15 @@
 body
-	include partials/topnav.pug
-	include partials/banner.pug
+	section.nonPopUp#nonPopUp
+		include partials/topnav.pug
+		include partials/banner.pug
+		section.parallax
+			include partials/letters.pug
+			include partials/secretariat.pug
+			include partials/committees.pug
+			include partials/contact.pug
+	section.popUps#popUps
+		section.parallax
+			include popUps/popUpTemplate.pug
+			//- include popUps/disec.pug
 	//- Homebrewed scripts
 	script(src="/javascripts/style.js")

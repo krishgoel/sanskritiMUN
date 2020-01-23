@@ -21,20 +21,36 @@
    font-family Nunito
    src url(/fonts/Nunito-Regular.ttf)
    font-weight Normal
+
+@font-face
+   font-family AlgreyaSans
+   src url(/fonts/AlgreyaSansRegular.woff2)
+   font-weight Normal
   
+@font-face
+   font-family AlgreyaSans
+   src url(/fonts/AlgreyaSansBold.woff2)
+   font-weight Bold
+
 // Colour palette
 orange = #E8824F
+orangeTransparent = rgba(232, 130, 79, 0.4)
 apricot = #F2A870
-marshmallow = #FAF5E4
+marshmallow = #FAF9F5
+white = #FFFFFF
+smoke = #3D3D3D
 cyan = #3BB0BA
 cyanTransparent = rgba(59, 176, 186, 0.7)
+blackTransparent= rgba(0,0,0,0.6)
 
 body
 	margin 0
 	padding 0
+	background-color marshmallow
+	font-family AlgreyaSans
 	
 .widthRestriction
-	width 90%
+	width 80%
 	display block
 	margin 0 auto
 	
@@ -55,7 +71,7 @@ nav
 	top 20px
 
 .logo
-	rfs(2rem)
+	font-size 30px
 	font-family Gilroy
 	float left
 	display block
@@ -68,40 +84,57 @@ nav
 	white-space nowrap
 
 .topnavLink
-	rfs(1.1rem)
-	font-family Nunito
+	font-size 20px
+	font-family AlgreyaSans
+	font-weight bold
 	display inline-block
 	margin-left 10px
 	padding-bottom 10px
 	transition 0.2s
+	margin-top 8px
+	color marshmallow
+	text-decoration none
 	
-// .topnavLink:hover
-
+.topnavLink:hover
+	border-bottom 1px solid marshmallow
+	padding-bottom 5px
+	
 .registerButton
-	font-family Nunito
-	background-color #00ff00
-	border none
+	font-family AlgreyaSans
+	background-color cyanTransparent
+	color marshmallow
+	font-weight bold
+	border 3px solid cyan
 	rfs(1.1rem)
 	border-radius 20px
-	padding 7px 15px 7px 15px
+	padding 7px 20px 7px 20px
+	margin-left 10px
 
+.registerButton:hover
+	background-image linear-gradient(22deg, rgba(59,176,186,1) 0%, rgba(121,211,219,1) 100%)
+	border 3px solid
+	border-image-source linear-gradient(22deg, rgba(59,176,186,1) 0%, rgba(121,211,219,1) 100%)
+	border-image-slice 1
+	
 // Banner section
 .bannerSection
+	padding-top 100px
 	height 100%
 	background url('/images/secretariat.jpg')
 	background-repeat: no-repeat
-	background-attachment: fixed
-	background-position 50% 50%
+	background-attachment: scroll
+	background-position 40% 50%
 	background-size: cover
 
 .bannerContent 
-	padding-top 200px
+	padding-top 150px
 	color #ffffff
 	text-align center
-	font-family Gilroy
+	font-family AlgreyaSans
+	font-weight bold
 
 mark 
-	background-color cyanTransparent
+	background-color orangeTransparent
 	color marshmallow
 	
 h1
@@ -112,3 +145,224 @@ h2
 
 h3 
 	rfs(1.5rem)
+
+// Parallax section 
+.parallax
+	margin 0
+	padding 0
+
+// Intro section
+.head
+	font-family AlgreyaSans
+	font-weight Normal
+	color orange
+
+.titleOne
+	font-family AlgreyaSans
+	font-weight Bold
+	color apricot	
+
+p 
+	rfs(1.18rem)
+	line-height 28px
+	color smoke
+
+hr 
+	height 5px
+	border-radius 20px
+	border none
+	width 90%
+	background-color apricot
+
+// Secretariat section
+.secretariatSection
+	background url('/images/secCardsBackground.jpg')
+	background-repeat repeat
+	background-attachment fixed
+	// filter blur(20px)
+
+.headPattern
+	font-family AlgreyaSans
+	font-weight bold
+	color marshmallow
+	padding-top 20px
+
+// .subHeadsSec	
+
+.cardsContainer
+	width 100%
+
+.column-4
+	width 25%
+	display inline-block
+
+.secCard
+	width 90%
+	background-color marshmallow
+	border-radius 15px
+	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+	transition 0.2s
+
+.secCard:hover
+	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
+
+.secCardPicture
+	width 100%
+	border-top-left-radius 15px
+	border-top-right-radius 15px
+
+.secCardContent
+	width 90%
+	display block
+	margin 0 auto
+
+.secCardName
+	font-family AlgreyaSans
+	font-weight bold
+	rfs(1.6rem)
+	padding-bottom 0
+	margin-bottom 0
+
+.JsecCardName
+	font-family AlgreyaSans
+	font-weight bold
+	rfs(1.6rem)
+	padding-bottom 0
+	margin-bottom 0
+	padding-top 23px
+
+.bigName
+	rfs(1.4rem)
+
+.secCardDesignation
+	font-family AlgreyaSans
+	rfs(1.2rem)
+	margin-top 5px
+	padding-top 0
+	padding-bottom 15px
+
+@media screen and (max-width: 910px)
+	.column-4
+		width 50%
+	
+@media screen and (max-width: 460px)
+	.column-4
+		width 100%
+	
+// Committes section
+.committeeCard
+	width 90%
+	background-color white
+	border-radius 15px
+	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
+	transition 0.2s
+	margin-bottom 20px
+
+.committeeCard:hover
+	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
+
+.committeeCardPicture
+	width 80%
+	display block
+	padding-top 30px
+	margin 0 auto
+	border-top-left-radius 15px
+	border-top-right-radius 15px
+
+.committeeCardContent
+	width 90%
+	display block
+	margin 0 auto
+
+.committeeCardName
+	font-family AlgreyaSans
+	font-weight bold
+	rfs(1.4rem)
+	padding-bottom 10px
+	margin-bottom 0
+
+// Contact section
+.contactSection
+	background-color smoke
+
+.row
+	overflow hidden
+
+.column-2
+	width 50%
+	display inline-block
+	background-color smoke
+	float left
+
+.columnContent 
+	width 90%
+
+.contactSection h1
+	font-weight bold
+
+.contactSection h2
+	color marshmallow
+	padding-top 10px
+	margin 0
+
+.contactLink
+	color marshmallow
+	rfs(1.2rem)
+	margin 0
+	padding 0
+	text-decoration none
+
+.contactText 
+	color marshmallow
+	font-weight bold
+	rfs(1.2rem)
+	margin 0
+	padding 0
+
+#allContactContent
+	padding-bottom 40px
+
+@media screen and (max-width: 790px)
+	.column-2
+		width 100%
+
+.endLine
+	text-align center
+	font-family Nunito
+
+.kLink
+	font-family Nunito
+	text-decoration none
+	font-weight bold
+	color orange
+
+.kLink:hover
+	border-bottom 1px solid orange
+	padding-bottom 5px
+
+// Committee Popups
+.committeePopUp
+	display none
+	
+button
+	font-family AlgreyaSans
+	background-color marshmallow
+	color apricot
+	font-weight bold
+	border 3px solid orange
+	rfs(1.1rem)
+	border-radius 10px
+	padding 7px 30px 7px 30px
+	margin-right 10px
+	transition 0.2s
+
+button:hover 
+	font-family AlgreyaSans
+	background-color apricot
+	color marshmallow
+	font-weight bold
+	border 3px solid orange
+	rfs(1.1rem)
+	border-radius 10px
+	padding 7px 30px 7px 30px
+	margin-right 10px
