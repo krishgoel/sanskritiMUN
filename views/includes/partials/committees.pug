@@ -1,73 +1,117 @@
 section.committeesSection
 	div.widthRestriction
-		h1.head(style="font-weight: bold") Committees
+		h1.head(style="font-weight: bold")#committeesPoint Committees
 		div.cardsContainer
+			h2.cardsubHead General Assemblies
+			br
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/disec.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName Disarmament and International Security Committee
+			a#disecCard(href="#disec")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/disec.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName UNGA: Disarmament and International Security Committee
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/ecofin.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName Economic and Financial Committee
+			a#ecofinCard(href="#ecofin")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/ecofin.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| UNGA: 
+								br
+								| Economic and Financial Committee
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/unsc.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName United Nations Security Council
+			a#loksabhaCard(href="#loksabha")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/lokSabha.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								|
+								br
+								| Lok Sabha
+								br
+								| 
+								br
+								|
+			br
+			h2.cardsubHead Specialised Agencies
+			br
+
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/hongKong.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName National Convention - 1972
+			a#uncswCard(href="#uncsw")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/uncsw.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName United Nations Commission on the Status of Women
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/uncsw.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName United Nations Commission on the Status of Women
+			a#uncaCard(href="#unca")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/unca.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName United Nations Correspondents' Association (Press)
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/unca.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName United Nations Correspondants' Association
+			a#ncon1793Card(href="#ncon1793")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/hongKong.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| National Convention - 1793
+								br
+								|
+								br
+								|
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/alliedPowers.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName 
-							| Allied Powers 
-							br
-							| Joint Crisis Committee on World War 2
+			a#unscCard(href="#unsc")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/unsc.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| United Nations Security Council
+								br
+								|
+								br
+								|
+			br
+			h2.cardsubHead Crisis Committees
+			br
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/axisPowers.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName 
-							| Axis Powers 
-							br
-							| Joint Crisis Committee on World War 2
+			a#alliedCard(href="#allied")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/alliedPowers.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| Allied Powers 
+								br
+								| Joint Crisis Committee on World War 2
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/adHoc.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName Cabinet of Colonel Gaddafi
+			a#axisCard(href="#axis")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/axisPowers.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| Axis Powers 
+								br
+								| Joint Crisis Committee on World War 2
 			//- Card init
-			div.column-4
-				div.committeeCard
-					img(src="images/committees/lokSabha.png").committeeCardPicture
-					div.committeeCardContent
-						p.committeeCardName Lok Sabha
+			a#colgadCard(href="#colgad")
+				div.column-4
+					div.committeeCard
+						img(src="images/committees/adHoc.png").committeeCardPicture
+						div.committeeCardContent
+							p.committeeCardName 
+								| Cabinet of Colonel Gaddafi
+								br
+								|
+								br
+								|
 			//- 
 				- DISEC
 				- Economic and Financial Committee

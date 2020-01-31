@@ -25,7 +25,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days " + hours + ": "
+  document.getElementById("demo").innerHTML = days + " days " + hours + ":"
   + minutes + " hours";
 
   // If the count down is finished, write some text
@@ -37,3 +37,68 @@ var x = setInterval(function() {
 
 
 // Committee card popups
+
+$("#disecCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#disec").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#ecofinCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#ecofin").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#loksabhaCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#loksabha").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#uncswCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#uncsw").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#uncaCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#unca").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#ncon1793Card").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#ncon1793").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#unscCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#unsc").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#alliedCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#allied").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#axisCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#axis").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$("#colgadCard").click(function(){
+  $("#nonPopUp").css("display", "none");
+  $("#colgad").css("display", "block");
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+});
+
+$(".close").click(function(){
+  $(".committeePopUp").css("display", "none");
+  $("#nonPopUp").css("display", "block");
+})

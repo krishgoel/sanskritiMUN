@@ -28,6 +28,9 @@
   src: url("/fonts/AlgreyaSansBold.woff2");
   font-weight: Bold;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -62,6 +65,8 @@ nav {
   display: block;
   margin-left: 0px;
   margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   color: #faf9f5;
 }
 .topnavLinksContainer {
@@ -111,14 +116,15 @@ nav {
   background-size: cover;
 }
 .bannerContent {
-  padding-top: 150px;
+  margin-top: 150px;
   color: #fff;
   text-align: center;
   font-family: AlgreyaSans;
   font-weight: bold;
+  background-color: rgba(232,130,79,0.3);
 }
 mark {
-  background-color: rgba(232,130,79,0.4);
+  background-color: rgba(232,130,79,0.3);
   color: #faf9f5;
 }
 h1 {
@@ -175,6 +181,13 @@ hr {
   background: url("/images/secCardsBackground.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
+  color: #faf9f5;
+}
+.secretariatSection h1 {
+  color: #faf9f5;
+}
+.secretariatSection h2 {
+  color: #faf9f5;
 }
 .headPattern {
   font-family: AlgreyaSans;
@@ -195,6 +208,7 @@ hr {
   border-radius: 15px;
   box-shadow: 7px 7px 21px -10px rgba(153,153,153,0.89);
   transition: 0.2s;
+  margin-bottom: 20px;
 }
 .secCard:hover {
   box-shadow: 7px 7px 35px -10px rgba(153,153,153,0.89);
@@ -212,13 +226,13 @@ hr {
 .secCardName {
   font-family: AlgreyaSans;
   font-weight: bold;
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: calc(1.265rem + 0.18vw);
   padding-bottom: 0;
   margin-bottom: 0;
 }
 @media (min-width: 1200px) {
   .secCardName {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 .JsecCardName {
@@ -244,7 +258,7 @@ hr {
 }
 .secCardDesignation {
   font-family: AlgreyaSans;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 5px;
   padding-top: 0;
   padding-bottom: 15px;
@@ -349,6 +363,7 @@ hr {
   text-decoration: none;
   font-weight: bold;
   color: #e8824f;
+  transition: 0.15s;
 }
 .kLink:hover {
   border-bottom: 1px solid #e8824f;
@@ -356,6 +371,19 @@ hr {
 }
 .committeePopUp {
   display: none;
+  transition: 0.3s;
+}
+.close {
+  cursor: pointer;
+}
+.comSubhead {
+  color: #e8824f;
+  font-size: calc(1.285rem + 0.42vw);
+}
+@media (min-width: 1200px) {
+  .comSubhead {
+    font-size: 1.6rem;
+  }
 }
 button {
   font-family: AlgreyaSans;

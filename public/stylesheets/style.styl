@@ -34,7 +34,7 @@
 
 // Colour palette
 orange = #E8824F
-orangeTransparent = rgba(232, 130, 79, 0.4)
+orangeTransparent = rgba(232, 130, 79, 0.3)
 apricot = #F2A870
 marshmallow = #FAF9F5
 white = #FFFFFF
@@ -42,6 +42,9 @@ smoke = #3D3D3D
 cyan = #3BB0BA
 cyanTransparent = rgba(59, 176, 186, 0.7)
 blackTransparent= rgba(0,0,0,0.6)
+
+html
+	scroll-behavior smooth
 
 body
 	margin 0
@@ -77,6 +80,8 @@ nav
 	display block
 	margin-left 0px
 	margin-right 20px
+	margin-top 15px
+	margin-bottom 10px
 	color marshmallow
 
 .topnavLinksContainer
@@ -127,11 +132,12 @@ nav
 	background-size: cover
 
 .bannerContent 
-	padding-top 150px
+	margin-top 150px
 	color #ffffff
 	text-align center
 	font-family AlgreyaSans
 	font-weight bold
+	background-color orangeTransparent
 
 mark 
 	background-color orangeTransparent
@@ -179,15 +185,20 @@ hr
 	background url('/images/secCardsBackground.jpg')
 	background-repeat repeat
 	background-attachment fixed
+	color marshmallow
 	// filter blur(20px)
+
+.secretariatSection h1
+	color marshmallow
+	
+.secretariatSection h2
+	color marshmallow
 
 .headPattern
 	font-family AlgreyaSans
 	font-weight bold
 	color marshmallow
 	padding-top 20px
-
-// .subHeadsSec	
 
 .cardsContainer
 	width 100%
@@ -202,6 +213,7 @@ hr
 	border-radius 15px
 	box-shadow 7px 7px 21px -10px rgba(153,153,153,0.89)
 	transition 0.2s
+	margin-bottom 20px
 
 .secCard:hover
 	box-shadow 7px 7px 35px -10px rgba(153,153,153,0.89)
@@ -219,7 +231,7 @@ hr
 .secCardName
 	font-family AlgreyaSans
 	font-weight bold
-	rfs(1.6rem)
+	rfs(1.4rem)
 	padding-bottom 0
 	margin-bottom 0
 
@@ -236,7 +248,7 @@ hr
 
 .secCardDesignation
 	font-family AlgreyaSans
-	rfs(1.2rem)
+	rfs(1.1rem)
 	margin-top 5px
 	padding-top 0
 	padding-bottom 15px
@@ -335,6 +347,7 @@ hr
 	text-decoration none
 	font-weight bold
 	color orange
+	transition 0.15s
 
 .kLink:hover
 	border-bottom 1px solid orange
@@ -343,6 +356,14 @@ hr
 // Committee Popups
 .committeePopUp
 	display none
+	transition 0.3s
+
+.close
+	cursor pointer
+
+.comSubhead
+	color orange
+	rfs(1.6rem)	
 	
 button
 	font-family AlgreyaSans

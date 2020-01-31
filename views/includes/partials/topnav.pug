@@ -1,11 +1,12 @@
 div.emptyNav
 nav#topnav
 	div.widthRestriction
-		h1.logo SMUN 2020
+		h1.logo
+			img(src="images/smun.png" style="height: 70px")
 		br
 		div.topnavLinksContainer#topnavLinksContainer
-			a(href="/disec").topnavLink About
-			a().topnavLink Secretariat
-			a().topnavLink Committees
+			a(href="#aboutPoint").topnavLink About
+			a(href="#secretariatPoint").topnavLink Secretariat
+			a(href="#committeesPoint").topnavLink Committees
 			a().topnavLink
 				button.registerButton Registrations open soon
